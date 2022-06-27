@@ -33,9 +33,12 @@ jobs:
           npm run build
 
       - name: move to FE package
-        cd FE
-        pwd
-        ls -l
+        run: |
+          cd FE
+          pwd
+          ls -l
+          cd dist
+          ls -l
 
       - name: Deploy
         env:
