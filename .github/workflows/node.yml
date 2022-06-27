@@ -13,7 +13,9 @@ jobs:
         uses: actions/checkout@master
 
       - name: Install Dependencies    # 의존 파일 설치
-        run: npm install
+        run: |
+          cd FE
+          npm install
 
       - name: Build                   # React Build
         run: npm run build
