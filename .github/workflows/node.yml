@@ -15,6 +15,7 @@ jobs:
       - name: Install Dependencies    # 의존 파일 설치
         run: |
           cd FE
+          npm install @/icons/emoji
           npm install
 #          npm install --save --legacy-peer-deps
 #          npm install @material-ui/icons
