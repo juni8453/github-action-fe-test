@@ -18,4 +18,6 @@ jobs:
           npm install
 
       - name: Build                   # React Build
-        run: npm run build
+        run: |
+          cd FE
+          npm run build
