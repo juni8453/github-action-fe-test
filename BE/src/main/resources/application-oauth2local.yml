@@ -1,0 +1,15 @@
+oauth2:
+  user:
+    github:
+      client-id: 42bec85cf9462b95d9d9
+      client-secret: f379a7b8e0249709edef126d20102424e0bfeba0
+      redirect-uri: http://localhost:8080/login/oauth/github/callback
+  provider:
+    github:
+      token-uri: https://github.com/login/oauth/access_token
+      user-info-uri: https://api.github.com/user
+
+jwt:
+  secretKey: tanygeombong
+  accessTokenExpiry : 1000000000
+  refreshTokenExpiry : 1000000000
