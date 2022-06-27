@@ -32,13 +32,10 @@ jobs:
           cd FE
           npm run build
 
-      - name: Check Package
-        run:
-          pwd
-
-      - name: Check Files
-        run:
-          ls -l
+      - name: move to FE package
+        cd FE
+        pwd
+        ls -l
 
       - name: Deploy
         env:
